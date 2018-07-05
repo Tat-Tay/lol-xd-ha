@@ -1,0 +1,27 @@
+float x = 400;
+float y = 300;
+
+float xSpeed = 5;
+float ySpeed = 5;
+
+void setup() {
+ size(800, 600);
+}
+
+void draw() {
+  background(0);
+  x = x + xSpeed;
+  ellipse(x, y, 50, 50);
+  fill(225);
+  
+  if (x > width || x < 0)
+  xSpeed = xSpeed * -1;
+  
+  y = y +ySpeed;
+  
+  ySpeed = ySpeed * -1;
+  
+  if (y > width || y < 0);
+ 
+  
+}
